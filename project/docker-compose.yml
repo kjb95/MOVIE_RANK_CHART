@@ -19,13 +19,13 @@ services:
       - mariadb
     tty: true
     restart: always
-  frontend:
+  frontend.com:
     build:
       context: .
       dockerfile: frontend/Dockerfile
     ports:
       - "80:80"
     depends_on:
-      - backend
+      - backend.com
     tty: true
     restart: always
