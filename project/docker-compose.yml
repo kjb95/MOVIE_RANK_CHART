@@ -7,7 +7,7 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     restart: always
-  backend:
+  backend.com:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mariadb://mariadb:3306/movie_rank_chart
     build:
